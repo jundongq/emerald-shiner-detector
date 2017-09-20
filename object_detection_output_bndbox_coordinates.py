@@ -148,12 +148,12 @@ with detection_graph.as_default():
             
             # tile all image slices together after running object detection
 			tiled_img = tileImg.tile_images(img_dict, nb_rows, nb_cols).astype(np.uint8)
-			print np.shape(tiled_img)
+			# print np.shape(tiled_img)
 			count += 1
 			print count
-			# tiled_img = cv2.cvtColor(tiled_img, cv2.COLOR_BGR2RGB)
-			# cv2.imwrite(os.path.join(SAMPLED_FRAME_DETECTED_FISH, "draw_%05d.png" % count), tiled_img)
-			# plt.figure(figsize=(12,8))
+			tiled_img = cv2.cvtColor(tiled_img, cv2.COLOR_BGR2RGB)
+			cv2.imwrite(os.path.join(SAMPLED_FRAME_DETECTED_FISH, "draw_%05d.png" % count), tiled_img)
+			plt.figure(figsize=(12,8))
 			# plt.imshow(tiled_img)
 
 
