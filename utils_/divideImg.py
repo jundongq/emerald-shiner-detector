@@ -5,7 +5,7 @@ def divideImg(image, nb_slices):
     """
     input::
     image: in format of 3d array (height, widht, channel)
-    nb_slices: scaler that determins how many sub images needed to be created
+    nb_slices: scaler that determines how many sub images needed to be created
     
     output::
     img_dict: a dictionay containing nb_slices elements, with key as name of sub image, value as the corresponding array
