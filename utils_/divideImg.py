@@ -1,8 +1,6 @@
 import numpy as np
 
 
-
-
 def divideImg(image, nb_slices):
     """
     input::
