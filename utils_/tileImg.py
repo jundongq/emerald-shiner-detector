@@ -1,14 +1,5 @@
-import glob
-import PIL.Image
-
 import numpy as np
 
-
-img_pieces_handles = glob.glob('*.png')
-
-img_matrices = np.reshape(img_pieces_handles, (6, 324)).T
-
-# print img_matrices[0]
 
 def tile_images(img_dict, nb_rows, nb_cols):
 
