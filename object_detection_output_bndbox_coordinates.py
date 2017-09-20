@@ -60,7 +60,7 @@ def load_image_into_numpy_array(image):
 
 
 # If you want to test the code with your images, just add path to the images to the TEST_IMAGE_PATHS.
-PATH_TO_TEST_IMAGES_DIR = '/Volumes/Transcend/FishPassage/PTVexperiments/Analysis/Fish_1_0804_Converted/sampledFrames/Undistorted'
+PATH_TO_TEST_IMAGES_DIR = '/path/to/undistorted/images'
 TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'Undistorted_%05d.png') %i for i in range(324)]
 
 
