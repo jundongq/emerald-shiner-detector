@@ -3,13 +3,10 @@ Using TensorFlow Object Detection API to detect emerald shiner from experimental
 
 All training images are from experiment video clips.
 
-Step 1. Prepare data
+Step 1. Run 'img_pre.py' to preprocess raw data in video clips
 
+Step 2: Train the object detection model (Faster R-CNN + Resnet101 on coco)
 
-Step 2: Train the object detection model
+Step 3: run 'object_detection_output_bndbox_coordinates_scores.py' to return images and bounding box coordinates
 
-Step 3: run 'object_detection_output_bndbox_coordinates.py' to return images and bounding box coordinates
-
-Step 4: run 'seeFish.py' to use background subtraction and bounding box coordinates to locate fish in each frame
-
-Step 5: run 'smoothOut.py' to smooth out the outliers (incorrectly identified fish coordinates) by replacing with averages of its neighbors
+Step 4: run 'img_2_fishCentroid.py' to compute fish mass center in each frame.
